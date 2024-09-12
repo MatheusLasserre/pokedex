@@ -54,7 +54,6 @@ export class PokemonsService {
 
     const limit = params.limit && params.limit > 0 ? params.limit : this.LIMIT_DEFAULT;
     const page = params.page && params.page > 0 ? params.page : this.PAGE_DEFAULT;
-    console.log(pokemons.results.length);
     const filteredPokemons = pokemons.results.filter((pokemon) => {
       return pokemon.name.toLowerCase().includes(params.query.toLowerCase());
     }).slice((page - 1) * limit, page * limit);
