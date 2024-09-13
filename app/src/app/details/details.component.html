@@ -5,9 +5,11 @@
     }
     @if(data.isLoading){
         <p class="message">Loading...</p>
+    } @else {
+        <a class="detailsBack" (click)="goBack()">Back</a>
     }
     @if(data.hasError){
         <p  class="message">Error. Does this pokemon exist or is the API down?</p>
     }
-    <a class="detailsBack" (click)="goBack()">Back</a>
+    
 </div>

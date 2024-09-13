@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { catchError, firstValueFrom } from 'rxjs';
-import { DetailedPokemon, Pokemon, PokemonAPIResponse } from './types/pokemons';
+import { DetailedPokemon, PokemonAPIResponse } from './types/pokemons';
 import { CACHE_MANAGER } from '@nestjs/cache-manager';
 import { Cache } from 'cache-manager';
 

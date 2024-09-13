@@ -1,31 +1,19 @@
 # Pokédex
 
-This repository is a template for a Pokédex application. It contains a server-side
+This repository is a Pokédex application using the PokeApi. It contains a server-side
 REST API built using [NestJS](https://nestjs.com) and a client-side single-page
 application built in [Angular](https://angular.dev).
 
 ## Prerequisites
 * [Node.js v20](https://nodejs.org/en)
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Setup
 1. Clone the repository.
-2. Install dependencies:
-    ```shell
-    cd /path/to/cloned/pokedex/
-    cd api/
-    npm install
-    cd ../app/
-    npm install
-    ```
-
 ## Run
 In two separate shells, start the API and app:
 ```shell
-cd api/
-npm run start
+docker compose up
 ```
-```shell
-cd app/
-npm run start
-```
-Both the API and app will rebuild as changes are made to them.
+Both the API and app will be dockerized and running in port 3000 and 4200 respectively.

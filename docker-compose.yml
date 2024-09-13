@@ -1,0 +1,15 @@
+services:
+  pokedex_api:
+    build: 
+      dockerfile: Dockerfile
+      context: api/
+    ports:
+      - "3000:3000"
+  
+  pokedex_app:
+    build: 
+      dockerfile: Dockerfile
+      context: app/
+    ports:
+      - "4200:4200"
+      

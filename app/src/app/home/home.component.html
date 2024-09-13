@@ -5,9 +5,11 @@
     }
     @if(data.isLoading){
     <p class="message">Loading...</p>
+    } @else {
+        <button (click)="loadMore()" class="loadMoreButton">Load More</button>
     }
     @if(data.hasError){
     <p  class="message">Error. Is the API down?</p>
     }
-    <button (click)="loadMore()" class="loadMoreButton">Load More</button>
+    
 </div>
