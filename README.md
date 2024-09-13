@@ -12,7 +12,7 @@ application built in [Angular](https://angular.dev).
 ## Setup
 1. Clone the repository.
 ## Run
-In two separate shells, start the API and app:
+In the shell, build and run the containers:
 ```shell
 docker compose up
 ```
