@@ -1,0 +1,34 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.loadMoreButton {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    max-width: 250px;
+    border-radius: 4px;
+    background-color: var(--white);
+    border: none;
+    color: var(--darkGreen);
+    font-size: 1.5rem;
+    transition: background-color 100ms var(--BEZIER);
+    cursor: pointer;
+    &:hover {
+        background-color: var(--lightWhite);
+    }
+}
+
+.message {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 600;
+}

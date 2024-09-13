@@ -1,0 +1,39 @@
+<div class="pokeDetailContainer" data-testid="pokeDetail">
+    <div class="imageContainer">
+        <img class="image" src="{{pokemon.sprites.other['official-artwork'].front_default}}" alt="pokemon sprite">
+    </div>
+        <p class="name">{{pokemon.name}} </p>
+        <p class="info">
+            <span class="label">Weight: </span>
+            <span class="value">{{pokemon.weight}} kg</span>
+        </p>
+        <p class="info">
+            <span class="label">Height: </span>
+            <span class="value">{{pokemon.height}} m</span>
+        </p>
+        <p class="info">
+            <span class="label">Types: </span>
+            <span class="value">
+                @for(type of pokemon.types; track $index) {
+                    @if($index == pokemon.types.length - 1) {
+                    <span class="value">{{type.type.name}}</span>
+                    } @else {
+                        <span class="value">{{type.type.name}},  </span>
+                    }
+                }
+            </span>
+        </p>
+        <p class="info">
+            <span class="label">Moves: </span>
+            <span class="value">
+                @for(move of pokemon.moves; track $index) {
+                    @if($index == pokemon.moves.length - 1) {
+                        <span class="value">{{move.move.name}}.</span>
+                    } @else {
+                        <span class="value">{{move.move.name}}, </span>
+                    }
+                }
+            </span>
+        </p>
+                
+</div>

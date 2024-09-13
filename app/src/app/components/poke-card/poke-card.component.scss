@@ -1,0 +1,35 @@
+.pokeCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--lightGreen);
+    color: var(--white);
+    text-decoration: none;
+    transition: background-color 100ms var(--BEZIER);
+    &:hover {
+        background-color: var(--lightWhite2);
+    }
+    cursor: pointer;
+}
+.pokeCardName {
+    font-size: 24px;
+    user-select: none;
+    text-transform: capitalize;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    hyphens: auto;
+}
+.pokeCardLink {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--white);
+
+
+}

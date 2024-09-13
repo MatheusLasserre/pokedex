@@ -1,0 +1,4 @@
+-> Create Pokemon Card Component DONE -> style
+-> Create Pokemon List Component DONE -> style
+-> Create Input search component
+-> Create Pokemon Detail Component DONE -> style and pass props

@@ -1,0 +1,24 @@
+<div class="searchContainer" data-testid="searchContainer">
+    <input 
+    type="text" 
+    placeholder="Search for a pokemon..." 
+    (input)="updateQuery($event)"
+    (keypress)="directSearch($event)"
+    (focus)="onFocus()" 
+    class="searchInput"
+    data-testid="searchInput"
+    >
+    @if(pokemons.data && searchOpen() === true) {
+    <div class="searchResults" data-testid="searchResults">
+        <a 
+        *ngFor="let pokemon of pokemons.data" 
+        href="/pokemon/{{pokemon.name}}" 
+        data-testid="searchResultItem"
+        class="searchResult"
+        >
+            {{pokemon.name}}
+        </a>
+    </div>
+    }
+
+</div>

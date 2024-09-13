@@ -28,7 +28,7 @@ export class PokemonsService {
         })
       )
     )
-    return data;
+    return data.results;
   }
  
   async getAllSearch(params: {

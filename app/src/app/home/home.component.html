@@ -1,0 +1,13 @@
+<div class="homeContainer">
+    <app-poke-search />
+    @if(data.data) {
+    <app-poke-list [pokemons]="data.data"></app-poke-list>
+    }
+    @if(data.isLoading){
+    <p class="message">Loading...</p>
+    }
+    @if(data.hasError){
+    <p  class="message">Error. Is the API down?</p>
+    }
+    <button (click)="loadMore()" class="loadMoreButton">Load More</button>
+</div>

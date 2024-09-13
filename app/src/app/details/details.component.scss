@@ -1,0 +1,14 @@
+.detailsBack {
+    width: 100%;
+    color: var(--lightWhite);
+    font-size: 20px;
+    text-decoration: underline;
+    transition: color 100ms var(--BEZIER);
+    margin-top: 20px;
+    user-select: none;
+    cursor: pointer;
+    &:hover {
+        color: var(--white);
+    }
+    
+}
